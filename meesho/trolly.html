@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<style>
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+    }
+    .order_items{
+        border: 3px solid blue;
+        height: 1000px;
+        max-height: 2000px;
+        width:30%;
+        margin: 23px;
+    }
+    .order_place{
+        border: 3px solid red;
+        height: 1000px;
+        max-height: 2000px;
+        width:30%;
+        margin: 23px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="item" id="leftlogo">
+            <img src="logo.jpg" alt="logo">
+            <div>Jaicst</div>
+        </div>
+        <div class="item" id="midnav">
+            <nav class="navbar">
+                <ul>
+                    <li class="navbarlist"><a href="/home.html" target="_blank" class="active">Home</a></li>
+                    <li class="navbarlist"><a href="/Offers.html" target="_blank" class="active">Offers</a></li>
+                    <li class="navbarlist"><a href="/Blog.html" target="_blank" class="active">Blog</a></li>
+
+                    <li class="navbarlist"><a href="/Videos.html" target="_blank" class="active">Videos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="item" id="rightinput">
+            <!-- <button class="btn">Login</button> -->
+            <button class="btn" onclick="location.href='/login.html'" type="button">
+                Login</button>
+            <button class="btn tro" onclick="location.href='/trolly.html'" type="button">
+                <img src="cart3.jpg" alt="" class="trolly" />
+            </button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="order_items">
+            <h3>Trolly</h3>
+            <div class="jscript">
+                <p id="no_trolly">
+                    Your chosing items are:
+                </p>
+                <div id="choice1"></div>
+                <div id="choice2"></div>
+                <div id="choice3"></div>
+            </div>
+        </div>
+        <div class="order_place">
+            <p id="order">Your total cost value is</p>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

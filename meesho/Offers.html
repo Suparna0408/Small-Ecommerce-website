@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<style>
+    * {
+        box-sizing: content-box;
+    }
+
+    .container p {
+        font-size: 2em;
+        font-weight: bolder;
+        font-style: italic;
+        border: 5px dashed red;
+        margin: 25px;
+        margin-top: 35px;
+        padding: 29px;
+        text-align: center;
+        color: green;
+        background-color: khaki;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="item" id="leftlogo">
+            <img src="logo.jpg" alt="logo">
+            <div>Jaicst</div>
+        </div>
+        <div class="item" id="midnav">
+            <nav class="navbar">
+                <ul>
+                    <li class="navbarlist"><a href="/home.html" target="_blank" class="active">Home</a></li>
+                    <li class="navbarlist"><a href="/Offers.html" target="_blank" class="active">Offers</a></li>
+                    <li class="navbarlist"><a href="/Blog.html" target="_blank" class="active">Blog</a></li>
+
+                    <li class="navbarlist"><a href="/Videos.html" target="_blank" class="active">Videos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="item" id="rightinput">
+            <button class="btn" onclick="location.href='/login.html'" type="button">
+                Login</button>
+            <button class="btn tro" onclick="location.href='/trolly.html'" type="button">
+                <img src="cart3.jpg" alt="" class="trolly" />
+            </button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <p>
+            IF you buy above 1000 &#8377; then you will get 30 &#37; off on Total product value.
+        </p>
+        <p>
+            Combo offers will be update soon.
+        </p>
+        <p>
+            Go to <a href="/home.html"> home page.</a>
+        </p>
+    </div>
+</body>
+
+</html>

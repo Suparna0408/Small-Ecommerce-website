@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<style>
+    * {
+        box-sizing: content-box;
+    }
+    .container{
+        /* border: 3px solid crimson; */
+        display: flex;
+        flex-flow: row wrap;
+        width: 1169px;
+        margin: 79px 0px 9px 198px;
+    }
+
+    .box {
+        width: 520px;
+        height: 445px;
+        /* border: 3px solid blue; */
+        /* border-radius: 23px; */
+        margin: 25px;
+    }
+    .box iframe{
+        border-radius: 23px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="item" id="leftlogo">
+            <img src="logo.jpg" alt="logo">
+            <div>Jaicst</div>
+        </div>
+        <div class="item" id="midnav">
+            <nav class="navbar">
+                <ul>
+                    <li class="navbarlist"><a href="/home.html" target="_blank" class="active">Home</a></li>
+                    <li class="navbarlist"><a href="/Offers.html" target="_blank" class="active">Offers</a></li>
+                    <li class="navbarlist"><a href="/Blog.html" target="_blank" class="active">Blog</a></li>
+
+                    <li class="navbarlist"><a href="/Videos.html" target="_blank" class="active">Videos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="item" id="rightinput">
+            <button class="btn" onclick="location.href='/login.html'" type="button">
+                Login</button>
+            <button class="btn tro" onclick="location.href='/trolly.html'" type="button">
+                <img src="cart3.jpg" alt="" class="trolly" />
+            </button>
+            
+        </div>
+    </header>
+    <div class="container">
+        <div class="box" id="box1">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/g_tea8ZNk5A?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box" id="box2">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/7KSNmziMqog?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box" id="box3">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/digpucxFbMo?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box" id="box4">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/3p8EBPVZ2Iw?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box" id="box5">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/W4eKVKwf3rQ?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box" id="box6">
+            <iframe width="520" height="445" src="https://www.youtube.com/embed/QKCkO9fy9O4?list=TLPQMjEwMjIwMjFmZY1dzaldvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

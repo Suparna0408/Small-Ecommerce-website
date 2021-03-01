@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+
+</head>
+<link rel="stylesheet" href="home.css">
+<style>
+    .signup {
+        text-align: -webkit-center;
+        position: absolute;
+        top: 227px;
+        left: 500px;
+    }
+
+    .groupform input {
+        text-align: center;
+        width: 443px;
+        padding: 9px;
+        margin: 6px 3px;
+        cursor: pointer;
+    }
+
+    .radio {
+        border: 1px solid gray;
+        display: flex;
+        width: 461px;
+        height: 38px;
+        margin: 6px 0px;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .submission {
+        /* display: block;
+        width: 29px; */
+        margin: 9px 13px;
+        padding: 9px 31px;
+        font-size: 15px;
+        border-radius: 9px;
+        cursor: pointer;
+        background-color: rgb(57, 235, 57);
+    }
+
+    .reset {
+        background-color: gray;
+    }
+
+    h1 {
+        position: absolute;
+        top: 133px;
+        left: 633px;
+        color: rgb(199, 8, 104);
+    }
+</style>
+
+<body>
+    <header>
+        <div class="item" id="leftlogo">
+            <img src="logo.jpg" alt="logo">
+            <div>Jaicst</div>
+        </div>
+        <div class="item" id="midnav">
+            <nav class="navbar">
+                <ul>
+                    <li class="navbarlist"><a href="/home.html" target="_blank" class="active">Home</a></li>
+                    <li class="navbarlist"><a href="/Offers.html" target="_blank" class="active">Offers</a></li>
+                    <li class="navbarlist"><a href="/Blog.html" target="_blank" class="active">Blog</a></li>
+
+                    <li class="navbarlist"><a href="/Videos.html" target="_blank" class="active">Videos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="item" id="rightinput">
+            <button class="btn" onclick="location.href='/login.html'" type="button">
+                Login</button>
+            <button class="btn tro" onclick="location.href='/trolly.html'" type="button">
+                <img src="cart3.jpg" alt="" class="trolly" />
+            </button>
+        </div>
+    </header>
+
+    <div class="container"></div>
+    <h1>Login/Sinup</h1>
+    <form action="/action.php" class="signup">
+        <div class="groupform">
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="groupform">
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="radio">
+            <p>Please select your gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div class="groupform">
+            <input type="text" placeholder="Enter your mobile no.">
+        </div>
+        <div class="groupform">
+            <input type="text" placeholder="Enter your alternating mob. no.">
+        </div>
+        <div class="groupform">
+            <input type="text" placeholder="Enter your state">
+        </div>
+        <button type="submit" class="submission">Submit</button>
+        <button type="reset" class="submission reset">Reset</button>
+    </form>
+    </div>
+</body>
+
+</html>
